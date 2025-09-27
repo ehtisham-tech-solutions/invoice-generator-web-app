@@ -232,8 +232,8 @@ const InvoiceModal = ({
                         <div className="w-3/5 grid font-bold p-0 text-[8px]">
                           <span className='pt-1 '>Bank Details :</span>
                           <span>Bandhan Bank</span>
-                          <span>A/C No. : ************</span>
-                          <span className='pb-1'>IFSC CODE : ************</span>
+                          <span>A/C No. : 10170000343326</span>
+                          <span className='pb-1'>IFSC CODE : BDBL0001215</span>
                         </div>
                         <div className="w-2/5 border-l border-black/50 grid pt-0">
                           <span className="pl-0 flex justify-center">
