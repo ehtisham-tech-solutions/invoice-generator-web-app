@@ -42,10 +42,10 @@ const InvoiceModal = ({
     onAddNextInvoice();
   };
 
-  // Split items into pages of 10
+  // Split items into pages of 12
   const chunkedItems = [];
-  for (let i = 0; i < items.length; i += 10) {
-    chunkedItems.push(items.slice(i, i + 10));
+  for (let i = 0; i < items.length; i += 12) {
+    chunkedItems.push(items.slice(i, i + 12));
   }
 
   const SaveAsPDFHandler = async () => {
@@ -166,7 +166,7 @@ const InvoiceModal = ({
                       <tbody className="text-[8px]">
                         {pageItems.map((item, index) => (
                           <tr key={item.id} >
-                            <td className="text-left pl-2 pt-0.5 pb-0">{pageIndex * 10 + index + 1}</td>
+                            <td className="text-left pl-2 pt-0.5 pb-0">{pageIndex * 12 + index + 1}</td>
                             <td className='pt-0 pb-0'>{item.name}</td>
                             <td className="text-center pt-0 pb-0">9988</td>
                             <td className="text-center pt-0 pb-0">{item.qty}</td>
@@ -175,7 +175,7 @@ const InvoiceModal = ({
                           </tr>
                         ))}
                         {/* Empty rows to keep height fixed */}
-                        {Array.from({ length: Math.max(0, 10 - pageItems.length) }).map((_, i) => (
+                        {Array.from({ length: Math.max(0, 12 - pageItems.length) }).map((_, i) => (
                           <tr key={`empty-${i}`} >
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
