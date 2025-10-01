@@ -50,10 +50,16 @@ const InvoiceForm = () => {
       address: ' S-78 / First Floor, Okhla Industrial Area Phase - 2,  New Delhi - 110020',
     },
     {
-      name: 'Saltpetre Products & Services Pvt Ltd (OPC)',
+      name: 'Saltpetre Products & Services Pvt Ltd (OPC) - Gurugram',
+      gst: '06AAWCS4503M1ZT',
+      address: '711 - E, Ground Floor, Pace City 2, Sector 37, Gurugram, Haryana - 122001',
+    },
+    {
+      name: 'Saltpetre Products & Services Pvt Ltd (OPC) - Bangalore',
       gst: '29AAWCS4503M1ZL',
       address: '524, 16th main, 3rd Block Koramangala, Bangalore - 560034',
     },
+    
   ];
 
   const [items, setItems] = useState([
