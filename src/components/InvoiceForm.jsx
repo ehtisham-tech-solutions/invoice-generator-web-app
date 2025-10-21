@@ -59,7 +59,6 @@ const InvoiceForm = () => {
       gst: '29AAWCS4503M1ZL',
       address: '524, 16th main, 3rd Block Koramangala, Bangalore - 560034',
     },
-    
   ];
 
   const [items, setItems] = useState([
